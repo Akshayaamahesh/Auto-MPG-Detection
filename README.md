@@ -7,26 +7,32 @@ The project is organized following industry standards for directory structure an
 Data/
   mpg.csv: Raw dataset containing information about miles per gallon.
   processed_data.csv: Processed dataset after data preprocessing steps.
+  
 src/
+
   data_processing/
     data_loader.py: Module for loading the dataset.
     data_pre_processing.py: Module for data cleaning and preprocessing.
+    
   dimensionality_reduction/
     plots/
       2d_projection_pca.png: Visualization of 2D projection using PCA.
       cumulative_explained_variance.png: Cumulative explained variance plot for PCA.
       pca_notebook.ipynb: Jupyter notebook demonstrating PCA.
       pca.py: Module for performing Principal Component Analysis.
+      
   hot_code_encoding/
     plots/
       cylinders_distribution.png: Distribution of cylinders feature.
       mpg_distribution.png: Distribution of mpg feature.
       origin_distribution.png: Distribution of origin feature.
     hot_code_encoding.py: Module for one-hot encoding categorical variables.
+    
   modeling/
     evaluation.py: Module for model evaluation.
     hyperparameter_Tuning.py: Module for hyperparameter tuning.
     modeling.py: Module for building regression models.
+    
   Testing/
 	  unit_testing/
 		  unit_testing_data_preprocessing.py
@@ -36,6 +42,7 @@ src/
 		  Unit_testing_evaluation.py		
 		  Unit_testing_hyperparametertuning.py
 		  integration_testing.py
+    
   Visualization/
     data_visualization.png: Visualization of the dataset.
     data_visualization.py: Module for data visualization.
@@ -47,6 +54,7 @@ src/
     VarianceThreshold.py: Module for variance thresholding.
     Mutual_Information.py: Module for mutual information-based feature selection.
     Sequential_Feature_Selection.py: Module for Sequential Feature Selection.
+    
   trained_models/
     Directory containing joblib files of trained models- 
     1. Linear Regression
