@@ -40,39 +40,39 @@ The project is organized following industry standards for directory structure an
 		  Unit_testing_modeling.py
 		  Unit_testing_evaluation.py		
 		  Unit_testing_hyperparametertuning.py
-		  integration_testing.py
+	  integration_testing.py
     
   **Visualization/**
-    data_visualization.png: Visualization of the dataset.
-    data_visualization.py: Module for data visualization.
-    feature_Selection.py: Module for feature selection.
-    Recursive_Feature_Elimination.py: Module for Recursive Feature Elimination.
-    Select_K_Best.py: Module for SelectKBest feature selection.
-    L1_Regularization.py: Module for L1 Regularization.
-    Tree-based_methods.py: Module for feature importance using decision trees or random forests.
-    VarianceThreshold.py: Module for variance thresholding.
-    Mutual_Information.py: Module for mutual information-based feature selection.
+    data_visualization.png: Visualization of the dataset.\
+    data_visualization.py: Module for data visualization.\
+    feature_Selection.py: Module for feature selection.\
+    Recursive_Feature_Elimination.py: Module for Recursive Feature Elimination.\
+    Select_K_Best.py: Module for SelectKBest feature selection.\
+    L1_Regularization.py: Module for L1 Regularization.\
+    Tree-based_methods.py: Module for feature importance using decision trees or random forests.\
+    VarianceThreshold.py: Module for variance thresholding.\
+    Mutual_Information.py: Module for mutual information-based feature selection.\
     Sequential_Feature_Selection.py: Module for Sequential Feature Selection.
     
   **trained_models/**
-    Directory containing joblib files of trained models- 
-    1. Linear Regression
-    2. Ridge Regression
-    3. Lasso Regression
-    4. Decision Tree Regressor
-    5. Random Forest Regressor
-    6. Gradient Boosting Regressor
-    7. XGBoost Regressor
-    8. Support Vector Regressor (SVR)
-    9. K-Nearest Neighbors Regressor (KNN)
-    10. Neural Network Regressor
-    11. Elastic Net
-    12. Bayesian Ridge Regression
-    13. Huber Regressor
-    14. Isotonic Regression
-    15. Gaussian Process Regressor
-    16. CatBoost Regressor
-    17. LightGBM Regressor
-    18. Elastic NetCV
-    19. LGBM Regressor
+    Directory containing joblib files of trained models- \
+    1. Linear Regression\
+    2. Ridge Regression\
+    3. Lasso Regression\
+    4. Decision Tree Regressor\
+    5. Random Forest Regressor\
+    6. Gradient Boosting Regressor\
+    7. XGBoost Regressor\
+    8. Support Vector Regressor (SVR)\
+    9. K-Nearest Neighbors Regressor (KNN)\
+    10. Neural Network Regressor\
+    11. Elastic Net\
+    12. Bayesian Ridge Regression\
+    13. Huber Regressor\
+    14. Isotonic Regression\
+    15. Gaussian Process Regressor\
+    16. CatBoost Regressor\
+    17. LightGBM Regressor\
+    18. Elastic NetCV\
+    19. LGBM Regressor\
     20. AdaBoost Regressor
