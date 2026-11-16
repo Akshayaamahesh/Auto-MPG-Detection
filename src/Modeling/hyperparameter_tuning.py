@@ -15,11 +15,15 @@ from sklearn.linear_model import BayesianRidge, HuberRegressor
 from sklearn.linear_model import ElasticNetCV
 
 # Load the MPG dataset
-file_path = 'Data\processed_data.csv' 
+file_path = 'Data/processed_data.csv' 
 df = pd.read_csv(file_path)
 
 # Assuming 'mpg' is the target variable
-X = df.drop('mpg', axis=1)
+# Use only the original features. processed_data.csv also holds imputed copies of the
+# target (e.g. mean_imputed_mpg); including them would leak the label into the model.
+FEATURES = ['cylinders', 'displacement', 'horsepower', 'weight', 'acceleration', 'model_year', 'origin']
+df['horsepower'] = pd.to_numeric(df['horsepower'], errors='coerce')  # '?' -> NaN, then mean-imputed
+X = df[FEATURES].astype({'origin': str})  # origin is categorical (1=USA, 2=Europe, 3=Japan)
 y = df['mpg']
 
 imputer_numeric = SimpleImputer(strategy='mean')

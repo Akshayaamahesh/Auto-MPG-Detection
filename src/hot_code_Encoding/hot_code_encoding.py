@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import os
 
 # Step 1: Load the Dataset
-mpg_data = pd.read_csv('C:/Users/aksha/Crisp DM/Data/processed_data.csv')
+mpg_data = pd.read_csv('Data/processed_data.csv')
 
 # Step 2: Identify Discrete and Continuous Variables
 discrete_vars = ['cylinders', 'origin']
