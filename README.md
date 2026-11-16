@@ -38,11 +38,11 @@ flowchart LR
     H --> V[Evaluation<br/><sub>RMSE, R²</sub>]
 ```
 
-- **Data preparation** — handles the `?` placeholders in `horsepower`, compares mean / median / mode / constant imputation, and one-hot encodes `origin`.
-- **Dimensionality reduction** — PCA with cumulative explained-variance analysis and 2-D projections.
-- **Feature selection** — variance threshold, SelectKBest, mutual information, L1 regularization, recursive feature elimination, tree-based importance, and sequential feature selection.
-- **Modeling** — linear (OLS, Ridge, Lasso, Elastic Net, Bayesian Ridge, Huber), tree ensembles (RF, Gradient Boosting, AdaBoost), kernel / instance-based (SVR, k-NN, Gaussian Process), and an MLP.
-- **Tuning** — Optuna search over the best-performing model family.
+- **Data preparation** - handles the `?` placeholders in `horsepower`, compares mean / median / mode / constant imputation, and one-hot encodes `origin`.
+- **Dimensionality reduction** - PCA with cumulative explained-variance analysis and 2-D projections.
+- **Feature selection** - variance threshold, SelectKBest, mutual information, L1 regularization, recursive feature elimination, tree-based importance, and sequential feature selection.
+- **Modeling** - linear (OLS, Ridge, Lasso, Elastic Net, Bayesian Ridge, Huber), tree ensembles (RF, Gradient Boosting, AdaBoost), kernel / instance-based (SVR, k-NN, Gaussian Process), and an MLP.
+- **Tuning** - Optuna search over the best-performing model family.
 
 ## Quick Start
 
